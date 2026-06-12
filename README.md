@@ -1,5 +1,7 @@
 # Rim Ghannam — Portfolio
 
+**🔗 Live site: [pandaaaxd.github.io/portfolio](https://pandaaaxd.github.io/portfolio/)**
+
 A premium, recruiter-focused portfolio for an IT technician. Pure HTML/CSS/JS — no build step, deploys straight to GitHub Pages.
 
 ## Structure
