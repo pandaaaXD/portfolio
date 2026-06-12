@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rim Ghannam — IT Technician</title>
+  <meta name="description" content="Rim Ghannam — IT Technician. Hardware diagnostics, system deployment, networking and user support. Reliable, hands-on, and driven by problem-solving." />
+  <meta property="og:title" content="Rim Ghannam — IT Technician" />
+  <meta property="og:description" content="Hands-on IT technician focused on hardware, systems and real-world problem solving." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Background decoration ===== -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--2" aria-hidden="true"></div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Home">
+        <span class="nav__logo-mark">RG</span>
+        <span class="nav__logo-text">Rim<span class="accent">.</span>Ghannam</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Main navigation">
+        <a href="#home" class="nav__link is-active">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#passions" class="nav__link">Passions</a>
+        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal"><span class="status-dot" aria-hidden="true"></span> Available for new opportunities</p>
+          <h1 class="hero__title reveal">
+            Hi, I'm <span class="gradient-text">Rim Ghannam</span> —<br />
+            I keep technology <em>running</em>.
+          </h1>
+          <p class="hero__role reveal">
+            <span class="mono">&gt;</span> IT Technician · <span id="typed" class="typed"></span><span class="typed-cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero__summary reveal">
+            Hands-on technician with a sharp eye for diagnostics and a calm head under pressure.
+            From hardware repair and system deployment to networking and user support — I find
+            the root cause, fix it properly, and document it so it stays fixed.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#contact" class="btn btn--primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Contact Me
+            </a>
+            <a href="#experience" class="btn btn--ghost">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              View Projects
+            </a>
+            <a href="assets/cv/Rim-Ghannam-CV.pdf" class="btn btn--outline" download>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </a>
+          </div>
+          <dl class="hero__stats reveal">
+            <div class="stat">
+              <dt class="stat__value" data-count="150">0</dt>
+              <dd class="stat__label">Devices repaired &amp; deployed</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat__value" data-count="98" data-suffix="%">0</dt>
+              <dd class="stat__label">Issues resolved first visit</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat__value" data-count="3" data-suffix="+">0</dt>
+              <dd class="stat__label">Years hands-on experience</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--r"></span>
+              <span class="terminal__dot terminal__dot--y"></span>
+              <span class="terminal__dot terminal__dot--g"></span>
+              <span class="terminal__title">rim@workstation: ~</span>
+            </div>
+            <div class="terminal__body mono" id="terminalBody">
+              <p><span class="t-prompt">$</span> whoami</p>
+              <p class="t-out">rim.ghannam — it_technician</p>
+              <p><span class="t-prompt">$</span> systemctl status skills</p>
+              <p class="t-out"><span class="t-ok">●</span> hardware.service&nbsp;&nbsp;&nbsp;<span class="t-ok">active (running)</span></p>
+              <p class="t-out"><span class="t-ok">●</span> networking.service&nbsp;<span class="t-ok">active (running)</span></p>
+              <p class="t-out"><span class="t-ok">●</span> support.service&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-ok">active (running)</span></p>
+              <p><span class="t-prompt">$</span> grep -i "values" profile.txt</p>
+              <p class="t-out">reliability · discipline · curiosity</p>
+              <p><span class="t-prompt">$</span> ./hire_me.sh <span class="t-blink">▊</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to About section">
+        <span class="hero__scroll-line"></span>
+        scroll
+      </a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num mono">01</span>
+          <h2 class="section__title">About Me</h2>
+          <p class="section__sub">The person behind the toolkit.</p>
+        </header>
+
+        <div class="about__grid">
+          <figure class="about__photo reveal">
+            <div class="about__photo-frame">
+              <img src="assets/img/profile.jpg" alt="Portrait of Rim Ghannam"
+                   onerror="this.parentElement.classList.add('is-placeholder'); this.remove();" />
+              <div class="about__photo-fallback" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span class="mono">add assets/img/profile.jpg</span>
+              </div>
+            </div>
+            <figcaption class="about__photo-tag mono">// Rim Ghannam — IT Technician</figcaption>
+          </figure>
+
+          <div class="about__text">
+            <p class="reveal">
+              I'm a technician at heart — the kind of person who took machines apart as a kid just to
+              see how they worked, and learned to put them back together better. Today I do that
+              professionally: diagnosing hardware faults, deploying and maintaining systems, and
+              supporting the people who depend on them.
+            </p>
+            <p class="reveal">
+              What sets me apart isn't just technical knowledge — it's how I work. I'm methodical: I
+              isolate variables, test assumptions, and document everything. I'm calm when systems are
+              down and users are stressed. And I never consider a ticket closed until the person on
+              the other end is genuinely unblocked.
+            </p>
+            <div class="about__values reveal">
+              <div class="value-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <h3>Reliability</h3>
+                <p>If I commit to it, it gets done — on time, every time.</p>
+              </div>
+              <div class="value-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <h3>Curiosity</h3>
+                <p>Every fault is a puzzle. I dig until I understand the <em>why</em>.</p>
+              </div>
+              <div class="value-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                <h3>Discipline</h3>
+                <p>Built through music and the gym — applied to everything I do.</p>
+              </div>
+              <div class="value-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <h3>People first</h3>
+                <p>Tech serves people. I translate jargon into clarity and calm.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num mono">02</span>
+          <h2 class="section__title">Technical Skills</h2>
+          <p class="section__sub">Hardware to helpdesk — the full stack of a technician.</p>
+        </header>
+
+        <div class="skills__grid">
+          <div class="skill-group reveal">
+            <div class="skill-group__head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+              <h3>Hardware</h3>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>PC assembly &amp; repair</span><span class="mono">95%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="95"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>Component diagnostics</span><span class="mono">90%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="90"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>Printers &amp; peripherals</span><span class="mono">85%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="85"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>Preventive maintenance</span><span class="mono">90%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="90"></div></div></div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group__head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <h3>Systems &amp; Software</h3>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>Windows 10/11 administration</span><span class="mono">90%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="90"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>Linux (Ubuntu/Debian)</span><span class="mono">75%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="75"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>OS imaging &amp; deployment</span><span class="mono">85%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="85"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>Backup &amp; recovery</span><span class="mono">80%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="80"></div></div></div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group__head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+              <h3>Networking</h3>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>LAN / Wi-Fi setup &amp; cabling</span><span class="mono">85%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="85"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>TCP/IP, DNS, DHCP</span><span class="mono">80%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="80"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>Router / switch configuration</span><span class="mono">75%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="75"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>Network troubleshooting</span><span class="mono">85%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="85"></div></div></div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group__head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              <h3>Tools &amp; Support</h3>
+            </div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>Ticketing &amp; documentation</span><span class="mono">90%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="90"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>Remote support tools</span><span class="mono">85%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="85"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>Scripting (Bash / PowerShell)</span><span class="mono">70%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="70"></div></div></div>
+            <div class="skill-bar"><div class="skill-bar__row"><span>Web basics (HTML/CSS/JS)</span><span class="mono">75%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-level="75"></div></div></div>
+          </div>
+        </div>
+
+        <div class="certs reveal">
+          <h3 class="certs__title mono">// certifications &amp; training</h3>
+          <ul class="certs__list">
+            <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg> IT Technician Diploma</li>
+            <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg> CompTIA A+ (in progress)</li>
+            <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg> Cisco Networking Basics</li>
+            <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg> Workplace Safety &amp; ESD Handling</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience & Projects ===== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num mono">03</span>
+          <h2 class="section__title">Experience &amp; Projects</h2>
+          <p class="section__sub">Real problems, measured results.</p>
+        </header>
+
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="case-card">
+              <div class="case-card__top">
+                <span class="case-card__tag mono">CASE STUDY</span>
+                <span class="case-card__date mono">2024 — present</span>
+              </div>
+              <h3>Workstation Fleet Refresh</h3>
+              <p class="case-card__role">IT Technician — deployment &amp; support</p>
+              <p>
+                Planned and executed the refresh of an aging workstation fleet: built a standard OS
+                image, migrated user data, and staged rollouts to avoid downtime during working hours.
+              </p>
+              <ul class="case-card__impact">
+                <li><strong>40+</strong> machines imaged and deployed</li>
+                <li><strong>0</strong> hours of unplanned user downtime</li>
+                <li><strong>~30 min</strong> per-machine setup (down from 2h manual)</li>
+              </ul>
+              <div class="case-card__stack">
+                <span class="chip chip--sm">Windows 11</span><span class="chip chip--sm">Imaging</span><span class="chip chip--sm">Data migration</span><span class="chip chip--sm">Documentation</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="case-card">
+              <div class="case-card__top">
+                <span class="case-card__tag mono">CASE STUDY</span>
+                <span class="case-card__date mono">2023 — 2024</span>
+              </div>
+              <h3>Small-Office Network Build</h3>
+              <p class="case-card__role">Network setup — end to end</p>
+              <p>
+                Designed and installed the full network for a small office: structured cabling, router
+                and switch configuration, secured Wi-Fi with guest isolation, and a labeled patch panel
+                so future troubleshooting takes minutes, not hours.
+              </p>
+              <ul class="case-card__impact">
+                <li><strong>20+</strong> drops cabled, tested and certified</li>
+                <li><strong>100%</strong> coverage — dead zones eliminated</li>
+                <li><strong>Documented</strong> topology map handed to the owner</li>
+              </ul>
+              <div class="case-card__stack">
+                <span class="chip chip--sm">Cabling</span><span class="chip chip--sm">Routing</span><span class="chip chip--sm">Wi-Fi</span><span class="chip chip--sm">Security</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="case-card">
+              <div class="case-card__top">
+                <span class="case-card__tag mono">CASE STUDY</span>
+                <span class="case-card__date mono">2023</span>
+              </div>
+              <h3>Helpdesk &amp; Hardware Repair</h3>
+              <p class="case-card__role">Support technician</p>
+              <p>
+                Front-line support across hardware, software and accounts. Built a personal
+                knowledge base of recurring issues that cut average resolution time for the
+                whole team — because a fix you can't repeat isn't really a fix.
+              </p>
+              <ul class="case-card__impact">
+                <li><strong>300+</strong> tickets resolved</li>
+                <li><strong>98%</strong> first-contact resolution on hardware faults</li>
+                <li><strong>25%</strong> faster average resolution after KB rollout</li>
+              </ul>
+              <div class="case-card__stack">
+                <span class="chip chip--sm">Helpdesk</span><span class="chip chip--sm">Repair</span><span class="chip chip--sm">Knowledge base</span><span class="chip chip--sm">User training</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="case-card">
+              <div class="case-card__top">
+                <span class="case-card__tag mono">PERSONAL PROJECT</span>
+                <span class="case-card__date mono">ongoing</span>
+              </div>
+              <h3>Home Lab</h3>
+              <p class="case-card__role">Self-directed learning</p>
+              <p>
+                A home lab built from refurbished parts: a small server running self-hosted services,
+                a segmented network for testing, and scheduled backups. It's where I break things
+                on purpose — so I don't break them at work.
+              </p>
+              <ul class="case-card__impact">
+                <li><strong>Self-hosted</strong> services with monitoring &amp; backups</li>
+                <li><strong>Refurbished</strong> hardware given a second life</li>
+                <li><strong>Sandbox</strong> for Linux, scripting and networking practice</li>
+              </ul>
+              <div class="case-card__stack">
+                <span class="chip chip--sm">Linux</span><span class="chip chip--sm">Self-hosting</span><span class="chip chip--sm">Bash</span><span class="chip chip--sm">Networking</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Passions ===== -->
+    <section class="section section--alt" id="passions">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num mono">04</span>
+          <h2 class="section__title">Passions &amp; Interests</h2>
+          <p class="section__sub">The same discipline that fixes systems also learns sonatas and lifts iron.</p>
+        </header>
+
+        <div class="passions__grid">
+
+          <!-- Guitar: mini music portfolio -->
+          <article class="passion-card passion-card--guitar reveal">
+            <div class="passion-card__head">
+              <div class="passion-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m11.9 12.1 4.514-4.514"/><path d="M20.1 2.3a1 1 0 0 0-1.4 0l-1.114 1.114A2 2 0 0 0 17 4.828v1.344a2 2 0 0 1-.586 1.414A2 2 0 0 1 17.828 7h1.344a2 2 0 0 0 1.414-.586L21.7 5.3a1 1 0 0 0 0-1.4z"/><path d="m6 16 2 2"/><path d="M8.2 9.9C8.7 8.8 9.8 8 11 8c2.8 0 5 2.2 5 5 0 1.2-.8 2.3-1.9 2.8l-.9.4A2 2 0 0 0 12 18a4 4 0 0 1-4 4c-3.3 0-6-2.7-6-6a4 4 0 0 1 4-4 2 2 0 0 0 1.8-1.2z"/></svg>
+              </div>
+              <div>
+                <h3>Guitar</h3>
+                <p class="passion-card__sub mono">// mini music portfolio</p>
+              </div>
+            </div>
+            <p class="passion-card__desc">
+              Years of daily practice taught me what no manual could: that mastery is just
+              patience plus repetition. Here's a small selection of what I play.
+            </p>
+
+            <div class="player" id="player">
+              <div class="player__now">
+                <div class="player__art" aria-hidden="true">
+                  <span class="eq"><i></i><i></i><i></i><i></i></span>
+                </div>
+                <div class="player__meta">
+                  <p class="player__track" id="playerTrack">Select a track</p>
+                  <p class="player__artist mono" id="playerSub">— rim ghannam, guitar</p>
+                </div>
+              </div>
+              <div class="player__progress">
+                <span class="mono" id="playerCur">0:00</span>
+                <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek position" />
+                <span class="mono" id="playerDur">0:00</span>
+              </div>
+              <div class="player__controls">
+                <button class="player__btn" id="btnPrev" aria-label="Previous track">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5" stroke="currentColor" stroke-width="2"/></svg>
+                </button>
+                <button class="player__btn player__btn--main" id="btnPlay" aria-label="Play or pause">
+                  <svg id="iconPlay" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                  <svg id="iconPause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
+                </button>
+                <button class="player__btn" id="btnNext" aria-label="Next track">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2"/></svg>
+                </button>
+              </div>
+              <ul class="player__list" id="playerList"></ul>
+              <p class="player__hint mono" id="playerHint">drop your recordings in <strong>assets/audio/</strong> and list them in js/main.js</p>
+            </div>
+          </article>
+
+          <div class="passions__col">
+            <!-- Piano -->
+            <article class="passion-card reveal">
+              <div class="passion-card__head">
+                <div class="passion-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><line x1="7.5" y1="5" x2="7.5" y2="13"/><line x1="12" y1="5" x2="12" y2="13"/><line x1="16.5" y1="5" x2="16.5" y2="13"/><line x1="3" y1="13" x2="21" y2="13"/></svg>
+                </div>
+                <div>
+                  <h3>Piano</h3>
+                  <p class="passion-card__sub mono">// musical growth</p>
+                </div>
+              </div>
+              <p class="passion-card__desc">
+                Piano is where I learned to read complexity — two hands, two clefs, one outcome.
+                Each piece below marked a level I once thought was out of reach.
+              </p>
+              <ul class="milestones">
+                <li><span class="milestones__dot" aria-hidden="true"></span><div><strong>First full piece</strong><span>Learned entirely by ear — patience level: unlocked.</span></div></li>
+                <li><span class="milestones__dot" aria-hidden="true"></span><div><strong>Reading sheet music</strong><span>From hunting single notes to playing fluently.</span></div></li>
+                <li><span class="milestones__dot" aria-hidden="true"></span><div><strong>Performing for others</strong><span>Calm under pressure — useful on stage <em>and</em> on call.</span></div></li>
+              </ul>
+            </article>
+
+            <!-- Fitness -->
+            <article class="passion-card reveal">
+              <div class="passion-card__head">
+                <div class="passion-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.4 14.4 9.6 9.6"/><path d="M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l1.767-1.768a2 2 0 1 1 2.829 2.828z"/><path d="m21.5 21.5-1.4-1.4"/><path d="M3.9 3.9 2.5 2.5"/><path d="M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z"/></svg>
+                </div>
+                <div>
+                  <h3>Gym &amp; Fitness</h3>
+                  <p class="passion-card__sub mono">// consistency engine</p>
+                </div>
+              </div>
+              <p class="passion-card__desc">
+                Progressive overload is just iterative debugging for the body: set a goal,
+                measure, adjust, repeat. The gym is where my discipline gets compiled daily.
+              </p>
+              <div class="fit-stats">
+                <div class="fit-stat"><span class="fit-stat__num" data-count="5">0</span><span class="fit-stat__label">sessions / week</span></div>
+                <div class="fit-stat"><span class="fit-stat__num" data-count="3" data-suffix="+">0</span><span class="fit-stat__label">years consistent</span></div>
+                <div class="fit-stat"><span class="fit-stat__num" data-count="100" data-suffix="%">0</span><span class="fit-stat__label">show-up rate mindset</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <blockquote class="passions__quote reveal">
+          <p>“Practice a scale 500 times, rack the weight one more rep, re-seat the card and test again —
+          <span class="gradient-text">it's all the same skill: showing up until it works.</span>”</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__num mono">05</span>
+          <h2 class="section__title">Let's Talk</h2>
+          <p class="section__sub">Hiring a technician who actually answers? I reply fast.</p>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p class="contact__lead">
+              Whether it's a role, a contract, or just a question about something in this portfolio —
+              my inbox is open.
+            </p>
+            <a class="contact__line" href="mailto:reem.chloe2003@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              reem.chloe2003@gmail.com
+            </a>
+            <div class="contact__socials">
+              <a href="https://github.com/pandaaaXD" target="_blank" rel="noopener" aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.26 5.68.41.35.78 1.05.78 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.66.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+                LinkedIn
+              </a>
+              <a href="assets/cv/Rim-Ghannam-CV.pdf" download aria-label="Download CV">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                CV / Resume
+              </a>
+            </div>
+            <div class="contact__card mono reveal">
+              <p><span class="t-prompt">$</span> ping rim.ghannam</p>
+              <p class="t-out"><span class="t-ok">64 bytes</span> received — response time: <span class="t-ok">&lt; 24h</span></p>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm" action="https://formsubmit.co/reem.chloe2003@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Portfolio contact — new message" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+            <div class="field">
+              <label for="fName">Name</label>
+              <input id="fName" name="name" type="text" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="fEmail">Email</label>
+              <input id="fEmail" name="email" type="email" placeholder="you@company.com" required autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="fMsg">Message</label>
+              <textarea id="fMsg" name="message" rows="5" placeholder="Tell me about the role or project…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="sendBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="mono">© <span id="year"></span> Rim Ghannam — built by hand, like everything I fix.</p>
+      <a href="#home" class="footer__top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
