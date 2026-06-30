@@ -121,6 +121,23 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   color: #06121a; background: var(--gradient); font-weight: 600;
 }
 .nav__link--cta:hover { color: #06121a; background: var(--gradient); filter: brightness(1.12); }
+.nav__right { display: flex; align-items: center; gap: 8px; }
+.lang-toggle {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 13px; border-radius: 99px;
+  border: 1px solid var(--border); background: var(--surface);
+  color: var(--text-muted);
+  font-family: var(--font-mono); font-size: 0.76rem; font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.lang-toggle:hover { border-color: var(--accent); color: var(--text); }
+.lang-toggle svg { width: 15px; height: 15px; }
+.lang-toggle__opt { transition: color 0.2s ease; }
+.lang-toggle__sep { opacity: 0.4; }
+.lang-toggle[data-lang="en"] .lang-toggle__en,
+.lang-toggle[data-lang="fr"] .lang-toggle__fr { color: var(--accent); }
+
 .nav__toggle { display: none; flex-direction: column; gap: 5px; padding: 10px; }
 .nav__toggle span {
   width: 22px; height: 2px; background: var(--text); border-radius: 2px;

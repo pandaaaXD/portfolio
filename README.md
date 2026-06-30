@@ -4,6 +4,8 @@
 
 A premium, recruiter-focused portfolio for an IT technician. Pure HTML/CSS/JS — no build step, deploys straight to GitHub Pages.
 
+**Bilingual (English / French)** — a globe toggle in the navbar switches the whole site between EN and FR. The choice is remembered between visits, and first-time French-speaking visitors get French automatically. To edit wording, update the `I18N` dictionary at the top of `js/main.js` (every translatable element is tagged with `data-i18n` in `index.html`).
+
 ## Structure
 
 ```
