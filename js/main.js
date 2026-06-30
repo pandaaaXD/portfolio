@@ -321,7 +321,10 @@
     currentLang = lang;
     document.documentElement.lang = lang;
     try { localStorage.setItem("lang", lang); } catch (e) {}
-    if (langToggle) langToggle.setAttribute("data-lang", lang);
+    if (langToggle) {
+      langToggle.setAttribute("data-lang", lang);
+      langToggle.setAttribute("aria-checked", lang === "fr" ? "true" : "false");
+    }
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const val = I18N[lang][el.dataset.i18n];

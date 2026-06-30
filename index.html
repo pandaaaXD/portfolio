@@ -37,11 +37,10 @@
           <a href="#passions" class="nav__link" data-i18n="nav.passions">Passions</a>
           <a href="#contact" class="nav__link nav__link--cta" data-i18n="nav.contact">Contact</a>
         </nav>
-        <button class="lang-toggle" id="langToggle" data-lang="en" aria-label="Switch language / Changer de langue">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          <span class="lang-toggle__opt lang-toggle__en">EN</span>
-          <span class="lang-toggle__sep">/</span>
-          <span class="lang-toggle__opt lang-toggle__fr">FR</span>
+        <button class="lang-switch" id="langToggle" data-lang="en" role="switch" aria-checked="false" aria-label="Switch language / Changer de langue">
+          <span class="lang-switch__thumb" aria-hidden="true"></span>
+          <span class="lang-switch__opt lang-switch__opt--en">EN</span>
+          <span class="lang-switch__opt lang-switch__opt--fr">FR</span>
         </button>
         <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
